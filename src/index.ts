@@ -1,10 +1,20 @@
-import { API, DynamicPlatformPlugin, Logger, PlatformAccessory, PlatformConfig, Service, Characteristic, CharacteristicValue } from 'homebridge';
-import { exec } from 'child_process';
+import {
+  API,
+  DynamicPlatformPlugin,
+  Logger,
+  PlatformAccessory,
+  PlatformConfig,
+  Service,
+  Characteristic,
+  CharacteristicValue
+} from 'homebridge';
+// import { exec } from 'child_process';  // Remove this line if exec is not needed
 import axios from 'axios';
 import wol from 'wake_on_lan';
 
 const PLUGIN_NAME = 'homebridge-pc-control';
 const PLATFORM_NAME = 'PCControl';
+
 
 class PCControlPlatform implements DynamicPlatformPlugin {
   private readonly log: Logger;
