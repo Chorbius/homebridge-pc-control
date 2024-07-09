@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "Homebridge PC Control",
   "name": "@chorb/homebridge-pc-control",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Get and control power state of PC",
   "license": "Apache-2.0",
   "type": "module",
@@ -18,6 +18,7 @@
     "homebridge": "^1.8.0"
   },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint src/**/*.ts --max-warnings=0",
     "watch": "npm run build && npm link && nodemon",
