@@ -6,14 +6,25 @@ import {
   PlatformConfig,
   Service,
   Characteristic,
-  CharacteristicValue,
+  CharacteristicValue
 } from 'homebridge';
-// import { exec } from 'child_process';  // Remove this line if exec is not needed
+import { exec } from 'child_process';  // Keep this if you need to use exec
 import axios from 'axios';
 import wol from 'wake_on_lan';
 
 const PLUGIN_NAME = 'homebridge-pc-control';
 const PLATFORM_NAME = 'PCControl';
+
+// Example usage of exec
+
+exec('ls', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
+});
 
 
 class PCControlPlatform implements DynamicPlatformPlugin {
