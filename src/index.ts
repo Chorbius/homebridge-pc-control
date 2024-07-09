@@ -12,8 +12,8 @@ import {
 import axios from 'axios';
 import wol from 'wake_on_lan';
 
-const PLUGIN_NAME = '@chorb/homebridge-pc-control';
-const PLATFORM_NAME = 'PCControl';
+import { PLUGIN_NAME } from './settings';
+import { PLATFORM_NAME } from './settings';
 
 
 class PCControlPlatform implements DynamicPlatformPlugin {
