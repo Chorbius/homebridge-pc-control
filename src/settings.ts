@@ -1,2 +1,3 @@
-export const PLATFORM_NAME = 'PCControl';
-export const PLUGIN_NAME = '@chorb/homebridge-pc-control';
+// src/settings.ts
+export const PLUGIN_NAME = 'homebridge-pc-control';
+export const PLATFORM_NAME = 'PCControlPlatform';
