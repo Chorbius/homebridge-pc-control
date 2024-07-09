@@ -1,6 +1,6 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
-  "pluginType": "platform",
+  "pluginAlias": "PCControl",
+  "pluginType": "accessory",
   "singular": true,
   "schema": {
     "type": "object",
@@ -9,7 +9,28 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "My PC"
+      },
+      "macAddress": {
+        "title": "MAC Address",
+        "type": "string",
+        "required": true,
+        "format": "mac",
+        "description": "The MAC address of your PC's network interface"
+      },
+      "ipAddress": {
+        "title": "IP Address",
+        "type": "string",
+        "required": true,
+        "format": "ipv4",
+        "description": "The IP address of your PC"
+      },
+      "port": {
+        "title": "Port",
+        "type": "integer",
+        "required": true,
+        "default": 3000,
+        "description": "The port number your PC's control server is listening on"
       }
     }
   }

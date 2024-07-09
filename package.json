@@ -1,17 +1,16 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "displayName": "Homebridge PC Control",
+  "name": "homebridge-pc-control",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "Get and control power stat of pc",
   "license": "Apache-2.0",
-  "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git+https://github.com/Sleepy9000/homebridge-pc-control.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/Sleepy9000/homebridge-pc-control/issues"
   },
   "engines": {
     "node": "^18.17.0 || ^20.9.0",
@@ -29,6 +28,7 @@
   ],
   "devDependencies": {
     "@types/node": "^20.12.13",
+    "@types/wake_on_lan": "^0.0.33",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
     "eslint": "^8.57.0",
@@ -37,5 +37,9 @@
     "rimraf": "^5.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "wake_on_lan": "^1.0.0"
   }
 }
