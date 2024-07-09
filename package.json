@@ -2,9 +2,10 @@
   "private": false,
   "displayName": "Homebridge PC Control",
   "name": "@chorb/homebridge-pc-control",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Get and control power state of PC",
   "license": "Apache-2.0",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sleepy9000/homebridge-pc-control.git"
