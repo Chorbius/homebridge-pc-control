@@ -6,7 +6,7 @@ import {
   PlatformConfig,
   Service,
   Characteristic,
-  CharacteristicValue
+  CharacteristicValue,
 } from 'homebridge';
 import { exec } from 'child_process';  // Keep this if you need to use exec
 import axios from 'axios';
@@ -17,7 +17,7 @@ const PLATFORM_NAME = 'PCControl';
 
 // Example usage of exec
 
-exec('ls', (error, stdout, stderr) => {
+exec('echo "Hello, world!"', (error, stdout, stderr) => {
   if (error) {
     console.error(`exec error: ${error}`);
     return;
