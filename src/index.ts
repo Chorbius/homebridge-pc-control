@@ -1,18 +1,7 @@
-import {
-  API,
-  DynamicPlatformPlugin,
-  Logger,
-  PlatformAccessory,
-  PlatformConfig,
-  Service,
-  Characteristic,
-  CharacteristicValue,
-} from 'homebridge';
-import axios from 'axios';
-import wol from 'wake_on_lan';
+import { API } from 'homebridge';
 import { PLUGIN_NAME, PLATFORM_NAME } from './settings';
-import { PCControlPlatform } from './platform';
+import { PCControlPlatform as ImportedPCControlPlatform } from './platform';
 
 export default (api: API) => {
-  api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, PCControlPlatform);
+  api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, ImportedPCControlPlatform);
 };
