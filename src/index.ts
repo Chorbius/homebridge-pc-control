@@ -13,7 +13,7 @@ import axios from 'axios';
 import wol from 'wake_on_lan';
 
 import { PLUGIN_NAME } from './settings';
-import { PCControlPlatform as ImportedPCControlPlatform } from './platform';  // Alias the import
+//import { PCControlPlatform as ImportedPCControlPlatform } from './platform';  // Alias the import
 import { PLATFORM_NAME } from './settings';
 
 class PCControlPlatform implements DynamicPlatformPlugin {

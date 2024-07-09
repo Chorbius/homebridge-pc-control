@@ -1,7 +1,16 @@
-import { API, DynamicPlatformPlugin, Logger, PlatformAccessory, PlatformConfig, Service, Characteristic, CharacteristicValue } from 'homebridge';
-import { PLATFORM_NAME, PLUGIN_NAME } from './settings';
+import {
+  API,
+  DynamicPlatformPlugin,
+  Logger,
+  PlatformAccessory,
+  PlatformConfig,
+  Service,
+  Characteristic,
+  CharacteristicValue,
+} from 'homebridge';
 import axios from 'axios';
 import wol from 'wake_on_lan';
+import { PLUGIN_NAME, PLATFORM_NAME } from './settings';
 
 export class PCControlPlatform implements DynamicPlatformPlugin {
   public readonly Service: typeof Service;
