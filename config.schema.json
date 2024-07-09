@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "PCControl",
+  "pluginAlias": "@chorb/homebridge-pc-control",
   "pluginType": "platform",
   "singular": true,
   "schema": {
