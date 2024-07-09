@@ -6,7 +6,7 @@ import {
   PlatformConfig,
   Service,
   Characteristic,
-  CharacteristicValue
+  CharacteristicValue,
 } from 'homebridge';
 // import { exec } from 'child_process';  // Remove this line if exec is not needed
 import axios from 'axios';
