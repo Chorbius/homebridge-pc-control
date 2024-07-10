@@ -7,7 +7,7 @@ import {
   Service,
   Characteristic,
 } from 'homebridge';
-import { PLUGIN_NAME, PLATFORM_NAME } from './settings';
+import { PLUGIN_NAME, ACCESSORY_NAME } from './settings';
 import { PCControlAccessory } from './platformAccessory';
 
 export class PCControlPlatform implements DynamicPlatformPlugin {
@@ -60,7 +60,7 @@ export class PCControlPlatform implements DynamicPlatformPlugin {
       const accessory = new this.api.platformAccessory(device.displayName, uuid);
       accessory.context.device = device;
       new PCControlAccessory(this, accessory);
-      this.api.registerPlatformAccessories(PLUGIN_NAME, PLATFORM_NAME, [accessory]);
+      this.api.registerPlatformAccessories(PLUGIN_NAME, ACCESSORY_NAME, [accessory]);
     }
   }
 }

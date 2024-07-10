@@ -1,7 +1,7 @@
 import { API } from 'homebridge';
-import { PLUGIN_NAME, PLATFORM_NAME } from './settings';
-import { PCControlPlatform as ImportedPCControlPlatform } from './platform';
+import { ACCESSORY_NAME } from './settings';
+import { PCControlAccessory } from './accessory';
 
 export default (api: API) => {
-  api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, ImportedPCControlPlatform);
+  api.registerAccessory(ACCESSORY_NAME, PCControlAccessory);
 };
